@@ -1,0 +1,414 @@
+:root {
+    --nav-primario: #64CCC5;
+    --nav-secundario: #053B50;
+    --background-color: #F2F7A1;
+    --body-color: #071952;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--body-color);
+    width: 100%;
+}
+
+/*colores del span*/
+#span1 {
+    color: #fff;
+    font-size: 3.7rem;
+}
+
+#span2 {
+    color: #fff;
+    animation: colorChange 9s infinite alternate;
+    font-size: 2.7rem;
+}
+
+#span3 {
+    color: #fff;
+    font-size: 2.7rem;
+}
+
+#span4 {
+    color: #fff;
+    font-size: 2.7rem;
+}
+
+#span5 {
+    color: #fff;
+    font-size: 2.7rem;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #7d7;
+    }
+
+    25% {
+        color: #12de81;
+    }
+
+    50% {
+        color: #0f2f10;
+    }
+
+    75% {
+        color: #11ad00;
+    }
+
+    100% {
+        color: #164B60;
+    }
+}
+
+#navSecundario {
+    background-color: var(--nav-primario);
+    padding: 1rem;
+    width: 98.7vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+#navSecundario ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+    align-items: center;
+}
+
+#navSecundario ul li {
+    padding: 0.3rem 0.5rem;
+    transition: 0.3s;
+    border-radius: 4px;
+    border: 1px solid var(--nav-primario);
+}
+
+#navSecundario ul li:hover {
+    animation: infinite 1s borde alternate;
+    transform: scale(1.1, 1.1);
+    background-color: #fff;
+}
+
+@keyframes borde {
+    0% {
+        border: 1px solid #11ad00;
+    }
+
+    25% {
+        border: 1px solid #7d7;
+    }
+
+    50% {
+        border: 1px solid #000;
+    }
+
+    75% {
+        border: 1px solid #164B60;
+    }
+
+    100% {
+        border: 1px solid #12de81;
+    }
+}
+
+#navSecundario a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#navSecundario a:hover{
+    color: #000;
+}
+
+.elemento-nav {
+    font-size: 1.6rem;
+}
+
+/*imagen inicial o presentacion de la pagina*/
+#presentacion {
+    background-image: url('./imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#presentacion::after {
+    content: "La Tierra que crecio sola, el continente diferente";
+    font-size: 5.5rem;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    color: var(--nav-primario);
+    display: grid;
+    place-items: center;
+    background-color: #0005;
+    animation: fadeIn 2s ease;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+    20% {
+        opacity: 1;
+        filter: blur(10px);
+    }
+
+    90% {
+        filter: blur(1px);
+    }
+}
+
+.seccion-1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: 'Island Moments', cursive;
+    font-family: 'Luxurious Roman', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'The Nautigal', cursive;
+    background-color: #2f22;
+    margin: 4.2rem 1rem;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    color: var(--background-color);
+}
+
+.seccion-1 h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.seccion-2 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    font-family: 'Island Moments', cursive;
+    font-family: 'Luxurious Roman', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'The Nautigal', cursive;
+    background-color: #aca3;
+    margin: 1.3rem 1rem;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    color: var(--background-color);
+}
+
+#geografia-img {
+    width: 46%;
+    border-radius: 10px;
+    margin-right: 2rem;
+    animation: flotar 2s infinite alternate;
+}
+
+.geografia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--nav-primario);
+    padding-bottom: 1rem;
+}
+
+.curiosidades h2 {
+    color: #fff;
+    margin: 4rem 0rem;
+}
+
+.curiosidades {
+    padding: 3rem 7rem;
+    text-align: center;
+}
+
+.conociendo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--nav-primario);
+    padding: 1rem 0rem;
+}
+
+#conociendo-img {
+    width: 46%;
+    border-radius: 10px;
+    margin-left: 2rem;
+    animation: flotar 2s infinite alternate-reverse;
+}
+
+.calida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+#calida-img {
+    width: 46%;
+    border-radius: 10px;
+    margin-right: 2rem;
+    animation: flotar 2s infinite alternate;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        transform: translateY(-1rem);
+    }
+}
+
+.seccion-3 {
+    text-align: center;
+    margin: 1rem 6rem;
+}
+
+.seccion-3 h2 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+#galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.columna {
+    flex: 25%;
+}
+
+.columna img {
+    width: 100%;
+    height: 13%;
+    object-fit: cover;
+    padding: 9px;
+    border-radius: 30px;
+}
+
+picture {
+    color: #00defe;
+    border-radius: 5%;
+}
+
+picture img {
+    mix-blend-mode: lighten;
+    filter: grayscale(100%) blur(0.3px);
+    transition: 1.4s;
+}
+
+picture img:hover {
+    cursor: pointer;
+    filter: grayscale(0%) blur(0);
+    mix-blend-mode: normal;
+    transform: scale(1.06);
+    transition: 1.4s;
+}
+
+footer {
+    width: 100%;
+    height: 35vh;
+    background-color: var(--nav-primario);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-footer {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--background-color);
+}
+
+.redes {
+    cursor: pointer;
+    margin: 0rem 2rem;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    transition: 1s;
+}
+
+.redes:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.face:hover {
+    background-color: var(--body-color);
+}
+
+.insta:hover {
+    background-color: #ff4a5c;
+}
+
+.youtube:hover {
+    background-color: #d50203;
+}
+
+.paypal:hover {
+    background-color: #ffd140;
+}
+
+#modal-galeria {
+    background-color: #000d;
+    position: fixed;
+    width: 100%;
+    inset: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 5rem;
+    z-index: 2;
+}
+
+.foto-oculto {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.foto-mostrado {
+    pointer-events: unset;
+    opacity: 1;
+}
+
+#regresar-btn {
+    padding: 2rem;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+#regresar-btn:hover {
+    color: #000;
+    background-color: #fff;
+    transform: scale(1.3);
+}
