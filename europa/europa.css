@@ -1,0 +1,206 @@
+:root {
+  --nav-c: #304d30;
+  --back-c: #163020;
+  --col: #b6c4b6;
+}
+html {
+  scrollbar-color: #eef0e5 var(--nav-c);
+  scrollbar-width: thin;
+}
+body {
+  background-color: var(--back-c);
+}
+#nav {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  color: white;
+}
+.title-container {
+  width: 30%;
+}
+.flex-clasico {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-container img {
+  width: 30%;
+}
+.title-container span {
+  font-size: 2.3rem;
+  font-family: "Protest Revolution", sans-serif;
+}
+#span-color {
+  animation: colors 4s infinite;
+  font-size: 3rem;
+}
+@keyframes colors {
+  20% {
+    color: #9a031e;
+  }
+  40% {
+    color: #fb8b24;
+  }
+  60% {
+    color: #5f0f40;
+  }
+  80% {
+    color: #750e21;
+  }
+  100% {
+    color: #ffb0b0;
+  }
+}
+.links {
+  width: 70%;
+  text-decoration: none;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: double;
+}
+a button {
+  border: none;
+  font-size: 1.7rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Protest Revolution", sans-serif;
+  padding: 5px;
+  color: white;
+}
+a:hover {
+  border-bottom: 2px solid white;
+}
+#presentacion {
+  background-image: url(./imagenes/fondo.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#presentacion::after {
+  content: "La Tierra tradicional";
+  font-size: 5.5rem;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #0008;
+  animation: fadeIn 2s ease;
+  color: var(--col);
+  font-family: "Poor Story", system-ui;
+}
+.section-1 {
+  background-color: var(--nav-c);
+  margin: 10px 20px;
+  padding: 30px;
+  color: var(--col);
+  font-size: 1.4rem;
+  font-family: "Poor Story", system-ui;
+  border-radius: 20px;
+}
+.section-1 h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.section-2 {
+  background-color: var(--nav-c);
+  margin: 10px 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.sect-bar {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}
+.actualidad {
+  border-bottom: none;
+}
+.sect-bar div {
+  color: var(--col);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poor Story", system-ui;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sect-bar div h2 {
+  font-weight: 900;
+  text-decoration: overline underline;
+}
+.sect-bar img {
+  width: 55%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.btn-sect2 {
+  cursor: pointer;
+  font-family: "Poor Story", system-ui;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 2px solid #eef0e5;
+  background-color: var(--back-c);
+  color: #eef0e5;
+  transition: all 0.5s;
+}
+.btn-sect2:hover {
+  transform: scale(1.2);
+}
+#pais {
+  margin: 15px 30px 10px;
+  padding: 20px;
+  background-color: var(--nav-c);
+  border-radius: 20px;
+}
+.noruega {
+  width: 100%;
+  font-family: "Poor Story", system-ui;
+  color: var(--col);
+}
+.noruega h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+}
+.noruega picture {
+  margin: 30px 0px;
+}
+.img-pais {
+  width: 80%;
+  margin: auto;
+  border-radius: 30px;
+}
+.noruega p {
+  font-weight: 500;
+  font-variant: small-caps;
+  font-size: 1.8rem;
+}
+.listado-noruega {
+  list-style-type: square;
+  font-size: 1.5rem;
+  margin: 20px 0px 0px 40px;
+}
+.listado-noruega li{
+  padding: 10px 0;
+}
+.footer{
+  height: 30vh;
+  padding: 30px 40px;
+  font-family: "Protest Revolution", sans-serif;
+  color: var(--col);
+  background: linear-gradient(to top,var(--back-c),  #105d49);
+  font-size: 1.5rem;
+  text-align: center;
+}
