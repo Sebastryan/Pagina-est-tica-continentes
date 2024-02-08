@@ -90,7 +90,6 @@ a:hover {
   display: grid;
   place-items: center;
   background-color: #0008;
-  animation: fadeIn 2s ease;
   color: var(--col);
   font-family: "Poor Story", system-ui;
 }
@@ -158,6 +157,141 @@ a:hover {
 .btn-sect2:hover {
   transform: scale(1.2);
 }
+.modal-curiosidades-inv {
+  pointer-events: none;
+  display: none;
+}
+.modal-curiosidades {
+  background-color: #000d;
+  position: fixed;
+  inset: 0;
+  padding: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: var(--col);
+  font-family: "Poor Story", system-ui;
+  font-size: 1.2rem;
+  pointer-events: all;
+}
+.modal-curiosidades h1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.modal-curiosidades h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#remove-c {
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 2px solid #105d49;
+  border-radius: 10px;
+  background-color: var(--back-c);
+  color: var(--col);
+}
+#remove-c:active {
+  transform: scale(1.2);
+}
+.modal-curiosidades img {
+  width: 50%;
+  border-radius: 20px;
+}
+.modal-flora-y-fauna-inv {
+  pointer-events: none;
+  display: none;
+}
+.modal-flora-y-fauna {
+  background-color: #000d;
+  position: fixed;
+  inset: 0;
+  padding: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: var(--col);
+  font-family: "Poor Story", system-ui;
+  font-size: 1.2rem;
+  pointer-events: all;
+}
+.modal-flora-y-fauna h1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.modal-flora-y-fauna h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#remove-f {
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 2px solid #105d49;
+  border-radius: 10px;
+  background-color: var(--back-c);
+  color: var(--col);
+}
+#remove-f:active {
+  transform: scale(1.2);
+}
+.modal-flora-y-fauna img {
+  width: 45%;
+  border-radius: 20px;
+}
+.modal-unionE-inv {
+  pointer-events: none;
+  display: none;
+}
+.modal-unionE {
+  background-color: #000d;
+  position: fixed;
+  inset: 0;
+  padding: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: var(--col);
+  font-family: "Poor Story", system-ui;
+  font-size: 1.2rem;
+  pointer-events: all;
+}
+.modal-unionE h1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.modal-unionE h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#remove-u {
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 2px solid #105d49;
+  border-radius: 10px;
+  background-color: var(--back-c);
+  color: var(--col);
+}
+#remove-u:active {
+  transform: scale(1.2);
+}
+.modal-unionE img {
+  width: 45%;
+  border-radius: 20px;
+}
 #pais {
   margin: 15px 30px 10px;
   padding: 20px;
@@ -192,15 +326,15 @@ a:hover {
   font-size: 1.5rem;
   margin: 20px 0px 0px 40px;
 }
-.listado-noruega li{
+.listado-noruega li {
   padding: 10px 0;
 }
-.footer{
+.footer {
   height: 30vh;
   padding: 30px 40px;
   font-family: "Protest Revolution", sans-serif;
   color: var(--col);
-  background: linear-gradient(to top,var(--back-c),  #105d49);
+  background: linear-gradient(to top, var(--back-c), #105d49);
   font-size: 1.5rem;
   text-align: center;
 }
